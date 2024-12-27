@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons/css/all/all.css">
+    <link rel="icon" href="iconos/icono.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Train+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Train+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<title>Servicios - EyM Electricidad</title>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="blink">EyM Electricidad</h1>
+        <h2>Instalación, reparación y mantenimiento de sistemas eléctricos.</h2>
+        <h3>Soluciones seguras y eficientes para tu hogar.</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-bolt"></i> Inicio</a></li>
+                <li><a href="servicios.html"><i class="fas fa-bolt"></i> Servicios</a></li>
+                <li><a href="sobre-mi.html"><i class="fas fa-bolt"></i> Sobre mí</a></li>
+                <li><a href="contacto.html"><i class="fas fa-bolt"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+		<section>
+            <h2 id="nuestros-servicios"><i class="fas fa-bolt"></i> Nuestros Servicios</h2>
+            <p>Ofrecemos una variedad de servicios que incluyen:</p>
+            <ul>
+                <li>Instalación de sistemas eléctricos residenciales y comerciales</li>
+                <li>Reparación y mantenimiento de instalaciones eléctricas</li>
+                <li>Instalación de sistemas de iluminación</li>
+                <li>Instalación de sistemas de seguridad eléctrica</li>
+                <li>Asesoramiento y diagnóstico de problemas eléctricos</li>
+            </ul>
+        </section>
+
+        <section id="tienda">
+            <h2><i class="fas fa-bolt"></i> Selecciona el servicio que desea presupuestar:</h2>
+            <div class="producto" data-id="1">
+                <h3>Instalaciones</h3>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="2">
+                <h3>Reparaciones</h3>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="3">
+                <h3>Mantenimientos</h3>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="4">
+                <h3>Materiales</h3>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </section>
+
+
+        <section id="carrito">
+            <h2><i class="fas fa-bolt"></i> Tu Carrito</h2>
+            <ul id="lista-carrito"></ul>
+            <button id="vaciar-carrito">Vaciar carrito</button>
+            <button id="proceder-compra">Proceder a la solicitud de presupuesto</button>
+        </section>
+
+
+        <section id="formulario-compra" style="display: none;">
+            <h2>Formulario de Compra</h2>
+            <form id="form-compra">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required><br>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="descripcion">Descripción del trabajo que quiere realizar:</label><br>
+                <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+		
+		<p><a href="index.html" class="Volver">Volver al Inicio</a></p>
+    </main>  
+
+    <footer>
+        <h3>Conéctate con nosotros!</h3>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/eym.electricista" target="_blank">
+                    <i class="fi fi-brands-instagram"></i> Instagram
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/5492215559411" target="_blank">
+                    <i class="fi fi-brands-whatsapp"></i> WhatsApp
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

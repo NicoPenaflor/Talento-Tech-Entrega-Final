@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+    background-color: #2C2C2C; 
+    color: white;
+    margin: 0;
+}
+header {
+    position: relative;
+    height: 320px;
+    background-image: url('header3.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 40px 0px;
+	margin: 0;
+    text-align: center;
+	font-size: 1.1em;
+    border-bottom: 3px solid #FFD700;
+    z-index: 1;
+}
+header h1, header h2, header h3 {
+    color: #FFD700; 
+    text-shadow: 4px 4px 0 #FFD700, -4px 4px 0 #FFD700, 4px -4px 0 #FFD700, -4px -4px 0 #FFD700, 0 0 10px ##FFD700;
+    font-family: 'Train One', sans-serif;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    justify-content: center; 
+    position: relative; 
+    z-index: 3; 
+}
+nav ul {
+    list-style-type: none; 
+    padding: 0;
+}
+nav li {
+    margin-bottom: 15px; 
+}
+nav a {
+    display: inline-block;
+    color: #FFD700; 
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 25px;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: white; 
+}
+main {
+    flex: 1; 
+    background-color: #000000; 
+    color: white;
+    padding: 20px; 
+    z-index: 5;
+	text-align: center;
+	display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main section {
+  font-family: "Tinos", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+footer {
+	position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+	border-top: 3px solid #FFD700;
+	z-index: 1;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer a {
+    color: #FFD700;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: white;
+}
+header::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 0;
+}
+.Volver {
+    color: #FFD700;
+    text-decoration: none;
+}
+.Volver:hover {
+    color: white;
+}
+.blink {
+    animation: blink-animation 1.5s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+#nuestros-servicios {
+	color: #FFD700;
+	border-bottom: 1px solid #FFD700;
+	border-top: 1px solid #FFD700;
+}
+
+#tienda {
+	color: #FFD700;
+	border-bottom: 1px solid #FFD700;
+	border-top: 1px solid #FFD700;
+}
+
+#carrito {
+	color: #FFD700;
+}
+
